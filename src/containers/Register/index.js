@@ -9,6 +9,7 @@ import {
   Button,
   IncPass,
   LoadingMsg,
+  Logo,
 } from '../styles'
 import { REGISTER } from './graphql'
 
@@ -75,6 +76,7 @@ const Register = () => {
           register()
         }}>Register</Button>
       </LoginContainer>
+      <Logo src="https://www.who.int/ResourcePackages/WHO/assets/dist/images/logos/en/h-logo-blue.svg" />
     </BackgroundContainer>
   )
 }

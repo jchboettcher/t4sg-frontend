@@ -157,7 +157,7 @@ const Vaccines = () => {
             </>
             : <>
               <FullDiv>
-                <h2>Login to see vaccine data.</h2>
+                <h2 style={{fontFamily: "Arial, Helvetica, sans-serif"}}>Login to see vaccine data.</h2>
               </FullDiv>
               <FullDiv>
                 <NoDataDiv>

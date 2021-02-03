@@ -61,7 +61,7 @@ export const Input = styled.input`
 `
 
 export const Title = styled.div`
-  font-size: 2.3em;
+  font-size: 2.8em;
   margin-bottom: 0.5em;
 `
 
@@ -75,18 +75,28 @@ export const Label = styled.div`
 
 export const Button = styled.button`
   border-radius: 3px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   padding: 0.25em 1.1em;
   height: 2.5em;
   width: auto;
-  color: black;
+  color: white;
   font-size: 1em;
-  background-color: rgb(70,255,70);
+  background-color: black;
+  border-color: black;
+  border-style: solid;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
   &:hover {
-    background-color: rgb(20,220,20);
+    /* background-color: rgb(32,49,59); */
+    /* color: black; */
+    border-color: white;
   }
+`
+
+export const Logo = styled.img`
+  position: absolute;
+  top: calc(100vh - 160px);
+  height: 16%;
 `
 
 export const Text = styled.a`
@@ -98,9 +108,11 @@ export const Text = styled.a`
 export const IncPass = styled.p`
   margin-bottom: 0;
   color: rgb(170,0,0);
+  font-family: Arial, Helvetica, sans-serif;
 `
 
 export const LoadingMsg = styled.p`
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0;
 `
 
@@ -304,23 +316,24 @@ export const LoginContainer = styled.div`
   justify-content: space-evenly;
   padding: 40px 20px;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.4);
+  font-family: Arial, Helvetica, sans-serif;
   margin: 3em;
   align-items: center;
   /* border-radius: 5px; */
   text-align: center;
   margin: 3em;
   width: 400px;
-  /* background-color: rgba(108,128,150,0.95); */
-  animation: color-change 40s infinite;
+  background-color: rgba(0,142,206,0.9);
+  /* animation: color-change 40s infinite; */
   position: center;
-  @keyframes color-change {
+  /* @keyframes color-change {
     0% { background-color: rgba(100,128,150,0.95); }
     20% { background-color: rgba(128,128,100,0.95); }
     40% { background-color: rgba(100,128,128,0.95); }
     60% { background-color: rgba(150,100,128,0.95); }
     80% { background-color: rgba(128,150,100,0.95); }
     100% { background-color: rgba(108,128,150,0.95); }
-  }
+  } */
 `
 
 export const InputDiv = styled.div`
